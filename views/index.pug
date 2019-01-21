@@ -1,0 +1,28 @@
+extends layout
+
+block content
+
+  body 
+    div.header
+      h2.head_text Toronto Waste Lookup 
+    div.searchcontainer
+      form
+        input(
+          id='userinfo'
+          type='text'
+          name='searchbox'
+          placeholder= 'Search'
+        ).box
+        button.searchbtn(
+          type='button'
+          class='btn'
+        )
+          i.fa.fa-search.searchicon
+
+    div(
+      id='data'
+    )
+
+    div.fave
+      h3 Favourites
+      
